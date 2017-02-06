@@ -1,0 +1,9 @@
+questions.txt
+
+Computer Science 50
+Problem Set 3
+
+0. 3 x 3 of 5 x 5 of 6 x 6 of 7 x 7 of 8 x 8 of 9 x 9
+1. A multidimensional integer array
+2. void greet(void)
+3. void init(void), void draw(void), bool move(int tile), bool won(void)

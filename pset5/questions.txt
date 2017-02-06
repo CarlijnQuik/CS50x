@@ -1,0 +1,32 @@
+0.  A string of characters with a maximum of 45.
+1.  Returns resource usage measures.
+2.  16, two structs and 14 longs.
+3.  When passing in values it takes time and memory to copy the structs, this can lead to inaccuracies.
+4.  for (int c = fgetc(fp); c != EOF; c = fgetc(fp)). The C library function int fgetc(FILE *stream) gets the next character 
+(an unsigned char) from the specified stream and advances the position indicator for the stream. So it runs through the file character by character.
+(https://www.tutorialspoint.com/c_standard_library/c_function_fgetc.htm).
+While doing so, it keeps track and changes integers misspellings, index and words.
+5.  By reading one character at a time it can discriminate between apastrophe's etc. and letters.
+6.  It ensures the initial value cannot be changed.
+7.  I used a struct called "node" to store individual words from the dictionary. It contains character array ''word'' and pointer ''next'' to another node.
+In order to load my dictionary, I used a hashtable where each entry is a node that can be placed in the linked list corresponding to the index. 
+8.  Due to a long during cold last week I had to do two assignments in one week. Therefore I only made the programme working:
+WORDS MISSPELLED:     644
+WORDS IN DICTIONARY:  143091
+WORDS IN TEXT:        19190
+TIME IN load:         0.04
+TIME IN check:        0.20
+TIME IN size:         0.00
+TIME IN unload:       0.03
+TIME IN TOTAL:        0.26
+9.  Noticed that making the hash function more complex only slowed the programme down, so removed ^strlen(word) from my hash function. Result:
+WORDS MISSPELLED:     644
+WORDS IN DICTIONARY:  143091
+WORDS IN TEXT:        19190
+TIME IN load:         0.04
+TIME IN check:        0.18
+TIME IN size:         0.00
+TIME IN unload:       0.02
+TIME IN TOTAL:        0.23
+10. With more time I could have looked at different hash functions and the sequence of actions within my code in order to optimise it 
+and understand more complex hashtables.

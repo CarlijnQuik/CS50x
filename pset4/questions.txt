@@ -1,0 +1,27 @@
+0.  BMP: 16M, GIF: 256, JPEG: 16M en PNG:256T (http://www.aivosto.com/vbtips/imageformats.html).
+1.  Only GIF (http://www.scantips.com/basics09.html).
+2.  Lossless and lossy compression are terms that describe whether or not, in the compression of a file, 
+all original data can be recovered when the file is uncompressed. With lossless compression, every single bit of data that was originally in the 
+file remains after the file is uncompressed. All of the information is completely restored. (http://whatis.techtarget.com/definition/lossless-and-lossy-compression)
+3.  JPG (http://www.scantips.com/basics09.html).
+4.   First, the system modifies the filename’s first
+character in the file’s directory entry to signal that the file
+has been deleted and that the directory entry can be recycled.
+Second, the system moves all of the file’s FAT clusters
+to the hard drive’s list of free clusters. The actual file
+data is never touched. (http://cdn.cs50.net/2015/fall/psets/4/garfinkel.pdf)
+5.  Overwrite the memory used to store the file.
+6.  A library with integer types of a certain width (http://pubs.opengroup.org/onlinepubs/009695399/basedefs/stdint.h.html).
+7.  To show that you want to use the data in a specific way.
+8.  A byte is 1 byte, a dword and long 4 bytes and a word 2.
+9.  BM (0x4D42).
+10. The size of the bitmap file (bf) and the size of the structure (bitmap infoheader) (bi).
+11. If biHeight is negative, the bitmap is a top-down DIB (device independent BMP) with the origin at the upper left corner (https://nl.wikipedia.org/wiki/BMP_(bestandsindeling))(https://msdn.microsoft.com/nl-nl/library/windows/desktop/dd318229(v=vs.85).aspx).
+12. biBitCount.
+13. fopen will return NULL if it cannot create the outfile to write to.
+14. The program is reading in 1 RGB triple at a time.
+15. The scanline must be a multiple of 4. If the width is 3, 1 pixel of 3 bytes must be added.
+16. Skips over any padding and looks for the next pixel (RGB triple).
+17. Current position of the file pointer (https://www.tutorialspoint.com/c_standard_library/c_function_fseek.htm).
+18. Rick Astley.
+Also used: https://github.com/nastysloper/cs50x-pset4/blob/master/questions.txt.
